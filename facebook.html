@@ -6,42 +6,53 @@
     <title>Entrar no Facebook</title>
     <link rel="shortcut icon" type="imagex/png" href="https://static.xx.fbcdn.net/rsrc.php/yb/r/hLRJ1GG_y0J.ico">
     <style>
+        html, body{
+            min-width: 100vw;
+            width: 100%;
+            min-height: 100vh;
+            height: 100%;
+        }
         .logo{
-            position: absolute;
-            left: 815px;
+            margin: 0 auto;
+            max-width: 240px;
             display:block;
         }
 
         .interface{
-            position: absolute;
-            left: 820px;
-            display: block;
-            top: 130px;
+            margin: 0 auto 30px;
+            justify-content: space-around;
+            max-width: 398px;
+            min-height: 392px;
+            display: flex;
+            flex-direction: column;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-            font-size: 20px;
-            background-color: rgba(210, 219, 228, 0.521);
-            padding: 25px;
-        
+            font-size: 18px;
+            background-color: whitesmoke;
+            background-size: 15px;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+
         }
         
         .links{
-            position: absolute;
-            left: 490px;
+            height: max-content;
             display: block;
-            top: 460px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
-            font-size: 15px;  
+            font-size: 15px;
+            max-width: 980px;  
+            margin: 0 auto;
         }
 
         .meta{
-            position: absolute;
-            left: 490px;
             display: block;
-            top: 650px;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
             font-size: 13px;
-        }
 
+        }
+        input{
+            width: 90%;
+        }
     </style>
 
 </head>
@@ -50,30 +61,19 @@
     <div class="logo"> <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="" height="85px"></div>
     <br>
 
-    <div class="interface"> &nbsp;&nbsp; Entrar no Facebook 
-        <br>
-        <input type="text" name="" value="Email ou telefone"> 
-        <br>
-        <input type="text" name="" value="Senha">
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <div class="interface"> 
+        <h1> Entrar no Facebook </h1> 
+        <input type="text" name="user" id="user" placeholder="Email ou telefone"> 
+        <input type="text" name="password" id="password" placeholder="Senha">
         <input type="button" value="Entrar">
-        <br>
-        &nbsp;&nbsp;
         <a href="https://www.facebook.com/recover/initiate/?ars=facebook_login">Esqueceu a conta?</a>
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        ou
-        <br>
-        &nbsp;&nbsp;&nbsp;&nbsp;
+        <p> ou </p>
         <input type="button" value="Criar nova conta">
     </div>
+    <br>
+    <br>
+    <br>
     <div class="links">
-        <br>
-        <br>
-        <br>
-        <br>
         Português (Brasil)
         English (US)
         Español
@@ -84,22 +84,21 @@
         हिन्दी
         中文(简体)
         日本語
-        &nbsp;
-        <input type="button" value="+">
+        <a href="www.google.com">+</a>
+        <br>
+        <a href="https://pt-br.facebook.com/reg/">Cadastre-se</a> &nbsp; <a href="https://pt-br.facebook.com/login/">Entrar</a> &nbsp; <a href="https://messenger.com/ ">Messenger</a> &nbsp; <a href="https://pt-br.facebook.com/lite/">Facebook Lite</a> 
+        <a href="https://pt-br.facebook.com/watch/">Vídeo</a> &nbsp; <a href="https://pt-br.facebook.com/places/">Locais</a> &nbsp; <a href="https://pt-br.facebook.com/games/">Jogos</a> &nbsp; <a href="https://pt-br.facebook.com/marketplace/">Marketplace</a> &nbsp; <a href="https://pay.facebook.com/">Meta Pay</a>  
+        <a href="https://www.meta.com/">Loja da Meta</a> <a href="https://www.meta.com/quest/">Meta Quest</a> &nbsp; <a href="https://www.instagram.com/">Instagram</a> &nbsp; <a href="https://www.threads.net/">Threads</a>  
+        <a href="https://pt-br.facebook.com/fundraisers/">Campanhas de arrecadação de fundos</a> &nbsp; <a href="https://pt-br.facebook.com/biz/directory/">Serviços</a> 
+        <a href="https://pt-br.facebook.com/votinginformationcenter/?entry_point=c2l0ZQ%3D%3D">Central de Informações de Votação</a> &nbsp; <a href="https://pt-br.facebook.com/privacy/policy/?entry_point=facebook_page_footer">Política de Privacidade</a>  <a href="https://pt-br.facebook.com/privacy/center/?entry_point=facebook_page_footer">Central de Privacidade</a> 
+        <a href="https://pt-br.facebook.com/groups/discover/">Grupos</a> &nbsp; <a href="https://about.meta.com/">Sobre</a> &nbsp; <a href="https://pt-br.facebook.com/ad_campaign/landing.php?placement=pflo&campaign_id=402047449186&nav_source=unknown&extra_1=auto">Criar anúncio</a> &nbsp; <a href="https://pt-br.facebook.com/pages/create/?ref_type=site_footer">Criar Página</a> <a href="https://developers.facebook.com/?ref=pf">Desenvolvedores</a> 
+        <a href="https://pt-br.facebook.com/careers/?ref=pf">Carreiras</a> &nbsp; <a href="https://pt-br.facebook.com/policies/cookies/">Cookies</a> &nbsp; <a href="https://www.facebook.com/help/568137493302217">Escolhas para anúncios</a> 
+        <a href="https://pt-br.facebook.com/policies?ref=pf">Termos</a> &nbsp; <a href="https://pt-br.facebook.com/help/?ref=pf">Ajuda</a> &nbsp; <a href="https://pt-br.facebook.com/login/device-based/regular/login/help/637205020878504">Carregamento de contatos e não usuários</a>  
         <br>
         <br>
-        <a href="https://pt-br.facebook.com/reg/">Cadastre-se</a> &nbsp;&nbsp; Entrar &nbsp;&nbsp; Messenger &nbsp;&nbsp; Facebook Lite &nbsp;&nbsp; Vídeo &nbsp;&nbsp; Locais &nbsp;&nbsp; Jogos &nbsp;&nbsp; Marketplace &nbsp;&nbsp; Meta
-        Pay &nbsp;&nbsp; Loja da Meta &nbsp;&nbsp; Meta Quest &nbsp;&nbsp; Instagram &nbsp;&nbsp; Threads 
-        <br>
-        Campanhas de arrecadação de fundos Serviços &nbsp;&nbsp; Central de Informações de Votação &nbsp;&nbsp; Política de Privacidade &nbsp;&nbsp; Central de Privacidade
-        Grupos &nbsp;&nbsp; Sobre &nbsp;&nbsp; Criar anúncio
-        <br>
-        Criar Página &nbsp;&nbsp; Desenvolvedores
-        &nbsp; Carreiras &nbsp;&nbsp; Cookies &nbsp;&nbsp; Escolhas para anúncios
-        &nbsp;Termos &nbsp;&nbsp; Ajuda &nbsp;&nbsp; Carregamento de contatos e não usuários 
+        <div class="meta">
+            <p> Meta © 2023 </p>
+        </div>
     </div>
-<div class="meta">
-    Meta © 2023
-</div>
 </body>
 </html>
